@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>사다리 게임</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src=odd.js>
+
+    </script>
+    <style media="screen">
+      body{
+                width:1920px;
+        height:1200px;
+
+        /* background-color:powderblue; */
+      }
+      .wrap{
+        position:relative;
+        width:831px;
+        height:auto;
+        height:1000px;
+        left:0;
+        top:50px;
+        margin:0 auto;
+        border:1px solid gray;
+        background-image: url(back1.png);
+        background-repeat: no-repeat;
+
+        text-align:center;
+        background-color:  #996633;
+      }
+      #rule{
+        position:relative;
+        width:100px;
+        height:70px;
+        background-image:linear-gradient(to left top,#9999e6,#ffff99);
+        position:relative;
+        top:50px;
+        font-weight: bold;
+        color: rgba(0,0,0,1);
+
+      }
+      .result{
+        position:relative;
+        left:20px;
+        right:20px;
+        width:500px;
+        height:100px;
+        top:100px;
+      /* border: 1px solid gray; */
+      }
+      #result{
+        position: relative;
+        display: inline-block;
+        float: right;
+        right:100px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color:white;
+        background-color: rgba(77, 48, 19, 1);
+        border-radius: 0px 20px 20px 0px;
+
+      }
+      #odd{
+        position: relative;
+        top:5px;
+        right:25px;
+        float: right;
+        border-radius: 50%;
+        padding:2px;
+        width:30px;
+        height:30px;
+        background-color: blue;
+        display:inline;
+        color:rgba(255,255,255,0.9);
+
+
+      }
+      #even{
+        position: relative;
+        top:5px;
+        right:25px;
+        float: right;
+        border-radius: 50%;
+        padding:2px;
+        width:30px;
+        height:30px;
+        background-color: red;
+        display:inline;
+        color:rgba(255,255,255,0.9);
+
+
+      }
+
+#round{
+  position: relative;
+  left:-20px;
+  top:5px;
+  font-size: 1rem;
+  color:rgba(255,255,255,0.7);
+  border-right: 0.5px solid gray;
+
+}
+
+      #whole{
+        position: relative;
+        left:0;
+        float:left;
+        margin-top:10px;
+        width:150px;
+        height:50px;
+                border:0.5px solid rgba(0,0,0,0.5);
+                border-radius: 10px;
+      }
+
+      li{
+        border:1px solid rgba(0,0,0,0.5);
+        height: 42px;
+        position: relative;
+
+
+      }
+
+      ol{
+
+      }
+
+      .resultarea{
+        position: relative;
+        top:100px;
+        width:831px;
+        height:500px;
+
+      }
+
+      #resum{
+        position: relative;
+        float:left;
+        width:500px;
+        height:500px;
+        right:50px;
+        /* border:1px solid gray; */
+
+      }
+
+      #result {
+          overflow: hidden;
+          width: 200px;
+      }
+      #result ol {
+        padding-left: 20px;
+    height: 400px;
+    overflow-y: scroll;
+      }
+      h1{
+        font-family: fantasy;
+        color:rgba(0,0,0,0.6);
+      }
+      bottom{
+        position: absolute;
+        left:20px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+<div class="wrap">
+<script type="text/javascript">
+
+
+</script>
+<div class="rule area">
+  <input id="rule" type="button" value= "굴리기" onclick="">
+
+</div>
+
+
+<div class="resultarea">
+  <h1>결과</h1>
+  <div id="result">
+
+    <ol>
+
+    </ol>
+
+  </div>
+
+  <div id="resum">
+
+  </div>
+
+  </div>
+<bottom>
+  김히진 붕신
+</bottom>
+</div>
+  </body>
+</html>
