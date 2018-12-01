@@ -271,3 +271,11 @@ overflow-y: scroll;
     left:20px;
 
   }
+  #ex{
+    margin-top:10px;
+  }
+#ax{
+  position: relative;
+  display: inline-block;
+right:50px;
+}

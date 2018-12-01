@@ -21,12 +21,25 @@ $(document).ready(function(){
       }
 
     });
-        $("#oddclick").click(function(){
-          return right=0;
-        });
-        $("#oddclick").click(function(){
-          return right=1;
-        });
+
+});
+$(document).ready(function(){
+  $('input[id=js_first]').click(function(){
+    $('#js_first').val(null);
+  })
+
+  $('button[id=js_submit]').click(function(eventObject){
+    var sum= parseInt($('#js_first').val()) *1.95;
+    $('#js_result').val( Math.round(sum) );
+
+  })
+
+  $('button[id=set]').click(function(){
+    $('#js_first').val(5000);
+    $('#js_result').val(null);
+
+  });
+
 
 });
 
