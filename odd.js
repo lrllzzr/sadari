@@ -109,7 +109,7 @@ alert('충전되었습니다');
     });
 
   $("#bet").click(function(){
-    if(now>=$("#js_first").val()){
+    if((now+1)>=Math.round($("#js_first").val())){
       if(bet==0 && $("#js_first").val()>=5000){
 
     alert('정상적으로 배팅 되었습니다');
@@ -140,9 +140,10 @@ alert('보유금액이 부족합니다');
       var odd= '홀';
       var even='짝';
       var results =  Math.round(Math.random());
-      var recoded = '<div id="resulted">'+(i)+'회차 : 당첨 <div id = "resulted2">당첨 금액 :&nbsp '+Math.round($("#js_first").val()*1.95)+'원</div></div>';
+      var recoded = '<div id="resulted">'+(i)+'회차 : 당첨  <div id = "resulted2"> 배팅 금액 :&nbsp'+$("#js_first").val()+'원</div> <div id ="resulted2">당첨 금액 :&nbsp '+Math.round($("#js_first").val()*1.95)+'원</div></div>';
 
-      var recorded = '<div id="resulted">'+(i)+'회차 : 실패 <div id = "resulted2"> 당첨 금액 :&nbsp'+0+'원</div></div>';
+
+      var recorded = '<div id="resulted">'+(i)+'회차 : 실패  <div id = "resulted2"> 배팅 금액 :&nbsp'+$("#js_first").val()+'원</div> <div id = "resulted2"> 당첨 금액 :&nbsp'+0+'원</div></div>';
 
 
       if(right===0){
@@ -161,8 +162,6 @@ $('#cash_left2').html(Math.round(now));
 total=total+($("#js_first").val()*0.95);
 $('#cash_left1').html(Math.round(total));
 // setback();
-
-
           left=2;
           right=1;
         }
@@ -170,10 +169,10 @@ $('#cash_left1').html(Math.round(total));
           $('#hi').append(recorded);
           right=1;
           alert(fail);
-          now=now-($("#js_first").val()*0.95);
+          now=now-($("#js_first").val());
           $('#cash_left2').html(Math.round(now));
 
-          total=total-($("#js_first").val()*0.95);
+          total=total-($("#js_first").val());
           $('#cash_left1').html(Math.round(total));
           // setback();
 
@@ -207,7 +206,7 @@ $('#cash_left1').html(Math.round(total));
           now=now-($("#js_first").val());
           $('#cash_left2').html(Math.round(now));
 
-          total=total-($("#js_first").val()*0.95);
+          total=total-($("#js_first").val());
           $('#cash_left1').html(Math.round(total));
 
         }
