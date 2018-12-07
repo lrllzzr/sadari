@@ -2,8 +2,8 @@
   color:white;
 }
   body{
-            width:1920px;
-    height:1200px;
+    /* width:1920px;
+    height:1200px; */
 
     background-image: url("back2.jpg");
 
@@ -11,8 +11,7 @@
   .wrap{
     position:relative;
     width:831px;
-    min-height: 1000px;
-    height:9999px;
+    height:900px;
     left:0;
     top:50px;
     margin:0 auto;
@@ -418,7 +417,9 @@ float:right;
 }
 
 #hi{
+  margin-top:80px;
   width:431px;
+
 }
 #resulted{
 
