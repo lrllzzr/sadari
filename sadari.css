@@ -6,7 +6,7 @@
     height:1200px; */
 
     background-image: url("back2.jpg");
-
+    background: fixed no-repeat center top url("back2.jpg");
   }
   .wrap{
     position:relative;
@@ -17,7 +17,7 @@
     margin:0 auto;
     border:1px solid gray;
 
-    background-repeat: no-repeat;
+
 
     text-align:center;
     background-color:  rgba(0,0,0,0.5);
@@ -74,12 +74,18 @@ cursor: pointer;
     position: relative;
     right:30px;
   }
-  #howmuch1, #howmuch2, #howmuch3{
+
+.howmuch{
     width:70px;
     margin-left: 15px;
-
+cursor:pointer;
     padding:5px;
     background-image:linear-gradient(to left top, rgba(217, 217, 217,0.5), rgba(0, 0, 0, 0.5));
+
+  }
+button.howmuch:hover{
+
+    background-image:linear-gradient(to right bottom,black,#bfbfbf);
 
   }
    #cash_left0{
@@ -189,10 +195,12 @@ top:-50px;
   }
   #oddbtns:hover{
     background-image:linear-gradient(to right bottom,black,#bfbfbf);
+
   }
   .btns{
     position: relative;
-    width:300px;
+    width:400px;
+    height:50px;
     /* left:50px; */
     display: flex;
     align-items: center;
@@ -207,7 +215,8 @@ top:-50px;
     .oddbtn2{
       border:0.5px solid rgba(0,0,0,0.2);
       width:50%;
-      height:30px;
+      height:100%;
+
       float:left;
       display: flex;
       justify-content: center;
@@ -219,8 +228,8 @@ top:-50px;
     }
       .evenbtn2{
         border:0.5px solid rgba(0,0,0,0.2);
-        width:50%;
-        height:30px;
+        height:100%;
+      width:50%;
         float:left;
         display: flex;
         justify-content: center;
@@ -235,12 +244,16 @@ top:-50px;
   background-image:linear-gradient(black,#bfbfbf);
 }
 #vs{
+display: flex;
+align-items: center;
+justify-content: center;
   float:left;
   width:50px;
-  height:30px;
+  height:100%;
   border:0.5px solid rgba(0,0,0,0.2);
   color:white;
   background-image:linear-gradient(#4d4d4d,#f2f2f2);
+
 }
   #result{
 
