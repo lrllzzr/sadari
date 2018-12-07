@@ -18,16 +18,76 @@
 <header>
   <h1 id="black">흑다리</h1>
 </header>
+<div class="c_betarea">
+  충전하기 :
+  <button id="howmuch1">5000</button>
+  <button id="howmuch2">10000</button>
+  <button id="howmuch3">50000</button>
+</div>
 <div class="resultarea">
+  <div class="b_betarea">
+
+    <div id="cash_title">지갑</div>
+    <div id="cash_floor">
+      <div id="cash_left0">충전금액</div>
+        <div id="cash_left3"></div>
+        <div id="cash_right">원</div>
+    </div>
+
+<div id="cash_floor">
+  <div id="cash_left0">손익 :</div>
+    <div id="cash_left1"></div>
+    <div id="cash_right">원</div>
+</div>
+
+<div class="now_cash" id="cash_floor">
+    <div id="cash_left0">보유머니 :</div>
+    <div id="cash_left2"></div>
+    <div id="cash_right">원</div>
+  </div>
+
+
+
+  </div>
+
+
+  <div class="rulearea">
+
+    <div id="result"><ol></ol></div>
+
+  </div>
+
+
+<div class="example">
+  <div class="bettingarea">
+  <button id="set">X</button>
+  <div id="bet_floor">
+  <div id="bet_left">
+    베팅금액:
+  </div>
+
+<div id="bet_right">
+  <input id="js_first" type="text" name="" value="" size=6>
+
+  원
+  </div>
+
+
+  </div>
+  <div id="bet_floor">
+    <div id="bet_left">
+    예상적중금액:
+  </div>
+  <div id="bet_right">
+  <div id="js_result" type="text" disabled></div>
+  원</div>
+
+  </div>
+</div>
 
   <div class="pickarea">
     <div class="btnarea">
-  <div class="btns">
-    <div class="oddbtn1" id="oddbtns" value="5000">5000</div>
-    <div id="vs">vs</div>
-    <div class="evenbtn1" id="oddbtns" value="10000">10000</div>
 
-  </div>
   <div class="btns">
     <div class="oddbtn2" id="oddbtns" value="odd">홀</div>
     <div id="vs">vs</div>
@@ -40,29 +100,14 @@
 </div>
 
   </div>
-
-
-<div class="rulearea">
-  <div class="rollarea"><input id="roll" type="button" value= "굴리기" onclick=""></div>
-  <div id="result"><ol></ol></div>
+      <div class="rollarea"><input id="roll" type="button" value= "결과보기" onclick=""></div>
 
 </div>
-
-  <bottom>
-<div class="example">
-  <input id="js_first" type="text" name="" value="" size=6>
-  <button id="js_submit">--></button>
-  예상적중금액: <input id="js_result" type="text" name="" value="" size=6 disabled>
-
-
-  <div id="ex">
-    <div id="ax">
-<button id="set">초기화</button>
-    </div>
-
-  </div>
+<div class="record">
+<div id="hi"></div>
 </div>
-</bottom>
 </div>
+</div>
+
   </body>
 </html>

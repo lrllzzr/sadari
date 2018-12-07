@@ -1,54 +1,134 @@
-
+*{
+  color:white;
+}
   body{
             width:1920px;
     height:1200px;
 
-    /* background-color:powderblue; */
+    background-image: url("back2.jpg");
+
   }
   .wrap{
     position:relative;
     width:831px;
-    height:auto;
-    height:1000px;
+    min-height: 1000px;
+    height:9999px;
     left:0;
     top:50px;
     margin:0 auto;
     border:1px solid gray;
-    background-image: url(back1.png);
+
     background-repeat: no-repeat;
 
     text-align:center;
-    background-color:  powderblue;
+    background-color:  rgba(0,0,0,0.5);
   }
 
     .resultarea{
       position: relative;
       top:100px;
       width:831px;
-      height:500px;
+      height:auto;
     }
     #black{
       font-size: 3rem;
     }
 
+    .rollarea{
+      position: relative;
+      left:235px;
+      margin-top:50px;
+    }
+
   #roll{
     position:relative;
-    width:100px;
-    height:70px;
+    font-size:1.1rem;
+    width:200px;
+    height:100px;
+    background-image: linear-gradient(rgba(0,0, 255,0.3),rgba(0, 0, 130,0.8));
 
     font-weight: bold;
-    color: rgba(0,0,0,1);
+    color: rgba(255,255,255,0.8);
 cursor: pointer;
   }
-  .rollarea{
+  #roll:hover{
+        color:#ffffb3;
+  }
+
+
+  .b_betarea{
+    position: relative;
+    left:120px;
+    display: inline-block;
+    float:left;
+    width:250px;
+    height:180px;
+
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding:10px;
+
+
+  }
+  .c_betarea{
+    position: relative;
+    right:30px;
+  }
+  #howmuch1, #howmuch2, #howmuch3{
+    width:70px;
+    margin-left: 15px;
+
+    padding:5px;
+    background-image:linear-gradient(to left top, rgba(217, 217, 217,0.5), rgba(0, 0, 0, 0.5));
+
+  }
+   #cash_left0{
+
+    padding: 0px 0px 10px 10px;
+    text-align: left;
+    display: inline-block;
+    float:left;
+  }
+  #cash_left1, #cash_left2, #cash_left3{
+    float: right;
+
+    position: absolute;
+    right:70px;
+  }
+  .now_cash{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+  }
+  #cash_right{
+    position: relative;
+    right:10px;
+    float: right;
+    display: inline-block;
+  }
+  #cash_title{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size:1.1rem;
+    padding:10px;
+  }
+  #cash_floor{
+    width:200px;
+    height:25px;
+    display:inline-block;
+    margin-bottom: 10px;
 
   }
   .pickarea{
+position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
     width:831px;
     height:auto;
+    right:45px;
+    margin-top:30px;
+
   }
 
 .btnarea{
@@ -58,6 +138,19 @@ cursor: pointer;
     float:right;
     position: relative;
     display:inline-block;
+top:-50px;
+
+  }
+  .example{
+    position: relative;
+    left:20px;
+    top:50px;
+
+  }
+  .bettingarea{
+    width:400px;
+    position: relative;
+    left:100px;
 
   }
   .result{
@@ -78,15 +171,17 @@ cursor: pointer;
   }
 
   #bet:hover{
-    color:yellow;
+    color:#ffffb3;
   }
 
   #bet{
     position: relative;
     font-size: 1.2rem;
     font-weight: 500;
+    color:rgba(255,255,255,0.8);
+    font-weight: bold;
 
-    background-image: linear-gradient(to bottom right, #664400, #ffbb33);
+    background-image: linear-gradient(to bottom right, rgba(51, 102, 255,0.5), rgba(51, 102, 255,0.3));
     width:100px;
     height:50px;
     left:0px;
@@ -94,7 +189,7 @@ cursor: pointer;
 
   }
   #oddbtns:hover{
-    background-color:#cc9900;
+    background-image:linear-gradient(to right bottom,black,#bfbfbf);
   }
   .btns{
     position: relative;
@@ -109,32 +204,9 @@ cursor: pointer;
 .btns:nth-child(2){
   margin-bottom:20px;
 }
-  .oddbtn1{
-    border:1px solid gray;
-    width:50%;
-    height:30px;
-    float:left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-color: #999999;
-    color:white;
-  }
-    .evenbtn1{
-      border:1px solid gray;
-      width:50%;
-      height:30px;
-      float:left;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      background-color: #999999;
-      color:white;
-    }
+
     .oddbtn2{
-      border:1px solid gray;
+      border:0.5px solid rgba(0,0,0,0.2);
       width:50%;
       height:30px;
       float:left;
@@ -142,11 +214,12 @@ cursor: pointer;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      background-color: #999999;
-      color:white;
+      background-image:linear-gradient(#4d4d4d,#f2f2f2);
+      color:rgba(255,255,255,0.8);
+      font-weight:bold;
     }
       .evenbtn2{
-        border:1px solid gray;
+        border:0.5px solid rgba(0,0,0,0.2);
         width:50%;
         height:30px;
         float:left;
@@ -154,21 +227,24 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        background-color: #999999;
+        background-image:linear-gradient(#4d4d4d,#f2f2f2);
         color:white;
+        font-weight:bold;
       }
 
 .selected{
-  background-color:#cc9900;
+  background-image:linear-gradient(black,#bfbfbf);
 }
 #vs{
   float:left;
   width:50px;
   height:30px;
-  border:1px solid gray;
+  border:0.5px solid rgba(0,0,0,0.2);
   color:white;
+  background-image:linear-gradient(#4d4d4d,#f2f2f2);
 }
   #result{
+
     position: relative;
     display: inline-block;
     float: right;
@@ -176,10 +252,20 @@ cursor: pointer;
     font-size: 1.3rem;
     font-weight: bold;
     color:white;
-    background-color: rgba(77, 48, 19, 1);
-    border-radius: 0px 20px 20px 0px;
+    background-image:linear-gradient(to left top, rgba(217, 217, 217,0.5), rgba(128, 128, 128, 0.5));
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;
+
 
   }
+
+    #result ol {
+      padding-left: 20px;
+  height: 400px;
+  overflow-y: scroll;
+    }
+
   #odd{
     position: relative;
     top:5px;
@@ -253,19 +339,6 @@ cursor: pointer;
 
   }
 
-  #result {
-      overflow: hidden;
-      width: 200px;
-  }
-  #result ol {
-    padding-left: 20px;
-height: 400px;
-overflow-y: scroll;
-  }
-  h1{
-    font-family: fantasy;
-    color:rgba(0,0,0,0.6);
-  }
   bottom{
     position: absolute;
     left:20px;
@@ -278,4 +351,83 @@ overflow-y: scroll;
   position: relative;
   display: inline-block;
 right:50px;
+}
+
+#js_first{
+  /* background-image:linear-gradient(to left top, #8c8c8c,#262626); */
+  background-color: rgba(0,0,0,0);
+  color:white;
+border:0.5px solid white;
+font-size: 1.1rem;
+text-align: right;
+height:20px;
+padding:1px;
+}
+
+#js_result{
+  display: inline-block;
+  position: relative;
+  width:70px;
+  height:20px;
+  background-color: rgba(0,0,0,0);
+  color:white;
+  font-size: 1.1rem;
+
+}
+
+#js_submit{
+    background-image:linear-gradient(to left top, #8c8c8c,#262626);
+  color:white;
+}
+#set{
+  position: relative;
+top:230px;
+right:-65px;
+  display:inline-block;
+    background-image:linear-gradient(to left top, #8c8c8c,#262626);
+  color:white;
+  border-radius: 10px;
+}
+
+.example{
+  width:350px;
+  height:600px;
+}
+#bet_floor{
+  width:350px;
+  height:auto;
+  padding:10px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+
+}
+#bet_left{
+  float:left;
+}
+
+#bet_right{
+float:right;
+}
+
+.record{
+  position: relative;
+  left:200px;
+  width:431px;
+
+}
+
+#hi{
+  width:431px;
+}
+#resulted{
+
+  border : 1px solid white;
+  border-radius: 10px;
+  padding:5px;
+  margin:10px 0px 10px 0px;;
+}
+
+#resulted2{
+
 }
